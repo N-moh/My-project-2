@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-tofit=no">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <title>Disney Princess Quiz</title>
+ </head>
+ 
+ <body>
+   <div class="appContainer-fluid">
+      <div class="quizBox box">
+        <div id="title">
+        <div class="col">
+         <h2 class="text-center">Which Disney Princess ?</h2>
+        </div>
+      </div>
+      <div id="questionarea" > 
+      <!--intro-->
+          <div id="intro" class="justify-content-center mx-auto">
+            <h4 class="text-center">Want to know which Disney princess you are most like?</h4>
+             <p class="text-center">Answer the questions to find out!</p>
+             <input type="button" value="Start Quiz"class="btn btn-success text-center" onclick="startQuiz()"/>
+        </div>
+        
+         <form id="quizForm">
+            <!--question 1-->
+            <div id="question1" class="mx-auto">
+              <div class="row justify-content-center" >
+                  <h4 class="text-center">Which superpower would you love to have?</h4>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a1" value="1"/>
+                <label for="a1" class="text-center">a) Magical long hair</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a2" value="2"/>
+                <label for="a2">b)Ice powers</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a3" value="3"/>
+                <label for="a3">c)Warrior skills</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest1" id="a4" value="4"/>
+                <label for="a4">d)Healing powers</label>
+              </div>
+              <div class="row" class="justify-content-center">
+                <input type="button" value="Next"class="btn btn-success mx-auto" onclick="question2()"/>
+              </div>
+            </div>
+
+            <!--question 2-->
+            <div id="question2">
+              <div class="row justify-content-center mx-auto">
+                  <h4 class="text-center">Choose an animal to talk to?</h4>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a1" value="1"/>
+                <label for="a1" class="text-center">a)A Lizard</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a2" value="2"/>
+                <label for="a2">b)A snowman</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a3" value="3"/>
+                <label for="a3">c)A dragon</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest2" id="a4" value="4"/>
+                <label for="a4">d)A mouse</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="button" value="Next" class="btn btn-success mx-auto" onclick="question3()"/>
+              </div>
+            </div>
+              <!--  question 3-->
+            <div id="question3">
+              <div class="row justify-content-center mx-auto">
+                  <h4 class="text-center">Which is your strongest personality trait?</h4>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest3" id="a1" value="1"/>
+                <label for="a1" class="text-center">a)Curiosity </label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest3" id="a2" value="2"/>
+                <label for="a2">b) Courage</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest3" id="a3" value="3"/>
+                <label for="a3">c)Honesty</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest4" id="a4" value="4"/>
+                <label for="a4">d)Perseverance</label>
+              </div>
+              <div class="row justify-content-center">
+              <input type="button" value="Next" class="btn btn-success mx-auto" onclick="question4()"/>
+             </div>
+            </div>
+            <!-- question 4-->
+            <div id="question4">
+              <div class="row justify-content-center mx-auto">
+                  <h4 class="text-center">What is your favourite colour scheme?</h4>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest4" id="a1" value="1" />
+                <label for="a1" class="text-center">a)Yellow ,pink,golden</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest4" id="a2" value="2"/>
+                <label for="a2">b) Grey,white,blue</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest4" id="a3" value="3"/>
+                <label for="a3">c)Green,blue,yellow</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest4" id="a4" value="4"/>
+                <label for="a4">d)Brown,yellow ,green</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="button" value="Next" class="btn btn-success mx-auto" onclick="question5()"/>
+              </div>
+            </div>
+
+            <!--  question 5-->
+
+            <div id="question5">
+              <div class="row justify-content-center mx-auto">
+                  <h4 class="text-center">What is your aim in life?</h4>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest5" id="a1" value="1" />
+                <label for="a1" class="text-center">a)I want to travel the world</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest5" id="a2" value="2"/>
+                <label for="a2">b) I want to be in control of myself</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest5" id="a3" value="3"/>
+                <label for="a3">c)I want to bring honour to my family</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest5" id="a4" value="4"/>
+                <label for="a4">d)I want to follow my dreams</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="button" value="Next" class="btn btn-success mx-auto" onclick="question6()"/>
+              </div>
+            </div>
+
+
+
+
+          <!--question 6-->
+            <div id="question6">
+              <div class="row justify-content-center mx-auto">
+                  <h4 class="text-center">What do you value most in a friend?</h4>
+              </div>
+              <div class="row">
+                &nbsp;
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest6" id="a1" value="1"/>
+                <label for="a1" class="text-center">a)Someone who will fight for me?
+                </label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest6" id="a2" value="2"/>
+                <label for="a2">b)Someone who does crazy things with me?</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest6" id="a3" value="3"/>
+                <label for="a3">c)Someone who helps me through bad days?</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="radio" name="quest6" id="a4" value="4"/>
+                <label for="a4">d)Someone who pushes me out of my comfort zone?</label>
+              </div>
+              <div class="row justify-content-center">
+                <input type="button" value="Results" class="btn btn-success mx-auto" onclick="results()"/>
+              </div>
+            </div>
+          </form>
+        
+            <!--Results-->
+            <div id="results" class="justify-content-center mx-auto">
+              <h4 class="text-center">You are like....</h4>
+              
+              <p class="text-center" id="result"></p>
+            </div>
+
+
+
+        
+      </div>
+    </div>
+    </div>
+    
+    <script src="script.js" type="text/javascript"></script>
+ </body>
+</html>
