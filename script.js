@@ -27,9 +27,14 @@
     document.getElementById("question5").style.display = "none";
     document.getElementById("question6").style.display = "inline-block";
   }
+
+  function question7() {
+    document.getElementById("question6").style.display = "none";
+    document.getElementById("question7").style.display = "inline-block";
+  }
   function results() {
     calculateResults()
-    document.getElementById("question6").style.display = "none";
+    document.getElementById("question7").style.display = "none";
     document.getElementById("results").style.display = "inline-block";
   }
   
@@ -88,9 +93,18 @@
             break;
         }
     }
+
+    const radios7= document.querySelectorAll('input[name="quest7"]');
+    let q7Value;
+    for (const rb of radios7) {
+        if (rb.checked) {
+            q7Value = rb.value;
+            break;
+        }
+    }
   
-    let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value)+Number(q6Value);
-    result = total / 6;
+    let total = Number(q1Value) + Number(q2Value) + Number(q3Value) + Number(q4Value) + Number(q5Value)+Number(q6Value)+Number(q7Value);
+    result = total / 7;
     console.log(result);
     if (result >=3) {
       msg = "You are courageous,family is important to you,you are undaunted by challenges-you are like MULAN";
